@@ -21,7 +21,7 @@ public class RedisController {
     @GetMapping("/get")
     public ResponseEntity<String> get(@RequestParam String key) {
         String value = redisService.getData(key);
-        return ResponseEntity.ok("값: " + value);
+        return ResponseEntity.ok("값 : " + value);
     }
 
     @DeleteMapping("/delete")
