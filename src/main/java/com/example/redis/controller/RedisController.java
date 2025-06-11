@@ -15,7 +15,7 @@ public class RedisController {
     @PostMapping("/set")
     public ResponseEntity<String> set(@RequestParam String key, @RequestParam String value) {
         redisService.saveData(key, value);
-        return ResponseEntity.ok("저장 완료");
+        return ResponseEntity.ok("저장완료");
     }
 
     @GetMapping("/get")
